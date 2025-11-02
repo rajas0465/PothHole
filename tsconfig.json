@@ -1,0 +1,23 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "module": "esnext", // Required for dynamic import()
+    "target": "esnext", // Modern JavaScript features
+    "jsx": "react-jsx", // Support for React JSX
+    "resolveJsonModule": true, // Allow JSON imports
+    "skipLibCheck": true, // Skip library checks for faster builds
+    "esModuleInterop": true // Ensure compatibility with CommonJS modules
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
+}
